@@ -1,0 +1,345 @@
+/* generales */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+}
+h2{
+    font-size: 2rem;
+}
+
+
+/*
+    Estilos del navbar
+*/
+
+.navbar-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background: #A5A2EC;
+    text-align: center;
+
+}
+
+nav div img {
+    margin-left: 3em;
+    width: 4em;
+}
+.enlaces-principales{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #131313;
+    text-decoration: none;
+    margin-left: 1em;
+
+
+}
+
+.enlaces-principales:hover{
+    color: whitesmoke;
+     text-shadow: 1px  1px 1px  #6634F7;
+     transition: color 0.3s;
+}
+.menu-hamburguesa{
+
+}
+
+/* deprecado por estilos de boostrap
+.menu-hamburguesa ul li{
+    list-style: none;
+
+}
+.menu-hamburguesa ul li a{
+    text-decoration: none;
+    color: #131313;
+    font-size: 1.2rem;
+}
+.menu-hamburguesa ul li a:hover{
+    color: whitesmoke;
+}
+*/
+
+/*
+    Estilos primera seccion del index
+*/
+.sec-sup-index{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #6634F7;
+    background-color: whitesmoke;
+}
+#cotenedor-textos-sup-index{
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+
+}
+#contenedor-img-sup-index{
+    width: 65%;
+
+}
+#contenedor-img-sup-index img{
+    width: 100%;
+}
+/*
+    Estilos segunda seccion del index
+*/
+.sec-mid1-index{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+.sec-mid1-index .contenedo-titulos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.contenedor-cards-espacios{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.cards-espacios{
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+    background: #A5A2EC;
+    border-radius: 10px;
+}
+.cards-espacios img{
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+}
+.cards-espacios h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cards-espacios p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*
+    Estilos tecera seccion del index (personas)
+*/
+
+.sec-mid2-index {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sec-mid2-index .contenedo-titulos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2em;
+}
+.contenedor-cards-personas{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+.cards-personas{
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    height: 28rem;
+    background: gray;
+    border-radius: 10px;
+}
+/*
+    Estilos tercera seccion CTOs
+*/
+.sec-inf-index{
+    display: flex;
+    width: 100%;
+}
+.contenedor-cto-index{
+    display: flex;
+    width: 50%;
+    align-items: start;
+    flex-direction: column;
+    padding: 5em;
+}
+.contenedor-cto-index button{
+    width: 40%;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: #A5A2EC;
+}
+
+/*
+    Estilos del pie de pagina
+*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7em;
+    background: #6634F7;
+    margin-bottom: -20px;
+    margin-top: 50px;
+    color: whitesmoke;
+    margin-right: 50px;
+}
+footer h3{
+    text-shadow: 1px 1px 3px black;
+}
+footer h4{
+    text-shadow: 1px 1px 3px black;
+}
+.iconos-redes{
+    width: 2em;
+    margin-left: 1.1em;
+}
+footer .redes{
+     margin-left: 4em;
+
+
+}
+footer .leyenda{
+    margin-right: 4em;
+    text-align: center;
+}
+
+
+/*
+    Estilos vista espacios
+*/
+.contenedor-cards-espacios-ve{
+    width: 98%;
+    height: 100rem;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-auto-rows: 22rem;
+    gap: 3.2%;
+    row-gap: -100px;
+    margin-left: 2%;
+}
+/*
+    Estilos vista personas
+*/
+.contenedor-cards-personas-vp{
+    width: 84%;
+    height: 95rem;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-auto-rows: 25rem;
+    gap: 8%;
+    margin-left: 5%;
+    margin-top: 2em;
+}
+
+/*
+    Estilos vista nosotros
+*/
+
+.sec-nosotros-banner{
+    width: 100%;
+    text-align: center;
+
+}
+.sec-nosotros-banner img{
+    width: 100%;
+    height: 600px;
+}
+.sec-nosotros-banner h1{
+    font-size: 3rem;
+    color: #6634F7;
+    margin-top: -100px;
+    text-shadow: 2px 2px 6px white;
+}
+.sec-mid-nosotros{
+    text-align: justify;
+    margin-top: 4em;
+    margin-right: 4em;
+    margin-left: 4em;
+
+}
+.sec-mid-nosotros h2{
+    color: #6634F7;
+    text-align: center;
+}
+.sec-inf-nosotros{
+    display: flex;
+    justify-content: center;
+    margin-right: 4em;
+    margin-left: 4em;
+    gap: 5%;
+}
+.contenedor-info-nosotros{
+
+    text-align: justify;
+}
+.contenedor-info-nosotros h2{
+    color: #6634F7;
+    text-align: center;
+}
+
+
+.navbar-personal{
+    background-color: #6634F7 !important;
+}
+
+.navbar-personal .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-personal .navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+.navbar-personal .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.person-image {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -30px;
+
+}
+
+.person-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #6634F7;
+}
+
+
+    /* Estilos para el fondo de la card */
+.card {
+    background-color: #A5A2EC;
+    color: #ffffff;
+}
+.row .col-sm-6 .card .card-body .btn-personal{
+    background-color: #6634F7;
+    border-radius: 4px;
+    border: 2px solid #6634F7;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+.row .col-sm-6 .card .card-body .btn-personal:hover{
+    background-color: whitesmoke;
+    color: #6634F7;
+
+}
