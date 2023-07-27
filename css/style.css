@@ -2,6 +2,8 @@
 body {
     font-family: Roboto, sans-serif;
     margin: 0px;
+    position: relative;
+
 }
 h2{
     font-size: 2rem;
@@ -104,11 +106,7 @@ nav div img {
     justify-content: center;
 
 }
-.contenedor-cards-espacios{
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-}
+
 .cards-espacios{
     display: flex;
     flex-direction: column;
@@ -144,21 +142,7 @@ nav div img {
     justify-content: center;
     margin-top: 2em;
 }
-.contenedor-cards-personas{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-}
-.cards-personas{
-    display: flex;
-    flex-direction: column;
-    width: 25em;
-    height: 28rem;
-    background: gray;
-    border-radius: 10px;
-}
+
 /*
     Estilos tercera seccion CTOs
 */
@@ -186,15 +170,14 @@ nav div img {
 */
 footer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: #6634F7;
     width: 100%;
     height: 7em;
-    background: #6634F7;
-    margin-bottom: -20px;
-    margin-top: 50px;
     color: whitesmoke;
-    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+
 }
 footer h3{
     text-shadow: 1px 1px 3px black;
@@ -208,7 +191,6 @@ footer h4{
 }
 footer .redes{
      margin-left: 4em;
-
 
 }
 footer .leyenda{
@@ -342,4 +324,110 @@ footer .leyenda{
     background-color: whitesmoke;
     color: #6634F7;
 
+}
+
+    /* Estilos formulario de registro */
+
+.contenedor-form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.form-registro{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6634F7;
+
+}
+.form-registro button{
+    background-color: #A5A2EC;
+    color: white;
+    margin-top: 7%;
+    border: 2px solid #6634F7;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+.form-registro button:hover{
+    background-color: white;
+    color: #6634F7;
+
+    border: 2px solid #6634F7;
+    border-radius: 5px;
+}
+.form-registro input{
+    color: black;
+    margin-top: 7%;
+    border: 1px solid #6634F7;
+    border-radius: 5px;
+}
+.form-registro input::placeholder{
+    color: black;
+    margin-top: 2%;
+    padding: 5px;
+    text-align: center;
+    color: #A5A2EC;
+
+}
+.form-registro a{
+    color: #6634F7;
+    margin-top: 2%;
+    text-decoration: none;
+    transition: color 0.3ms;
+}
+.form-registro a:hover{
+    color: #A5A2EC;
+
+}
+.form-registro h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contenedor-num{
+    margin-top: 7%;
+
+    display: flex;
+    height: 40px;
+
+    align-items: center;
+    line-height: 1.2rem;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.contenedor-num input#telefono{
+    width: 75%;
+    height: 2.2rem;
+    margin: 0;
+
+}
+
+.contenedor-num select{
+    width: 20%;
+    height: 2.2rem;
+    color: #6634F7;
+    border-color: #6634F7;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#aceptoTerminos{
+  -webkit-transform: scale(1.5);
+    margin-right: 0.5rem;
+
+}
+.contenedor-terminos{
+    margin-top: 2%;
+    margin-bottom: -2%;
+}
+
+.relleno-chapuzero{
+    height: 25em;
 }
