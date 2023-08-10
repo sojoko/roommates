@@ -1,0 +1,28 @@
+.sec-sup-index {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #6634F7;
+  background-color: whitesmoke;
+
+  #cotenedor-textos-sup-index {
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+
+  }
+
+  #contenedor-img-sup-index {
+    width: 70%;
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+}

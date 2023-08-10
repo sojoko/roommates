@@ -1,0 +1,109 @@
+.contenedor-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+
+  .form-registro {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6634F7;
+
+    button {
+      background-color: #A5A2EC;
+      color: white;
+      margin-top: 7%;
+      border: 2px solid #6634F7;
+      border-radius: 5px;
+      transition: color 0.3s;
+    }
+
+    button:hover {
+      background-color: white;
+      color: #6634F7;
+      border: 2px solid #6634F7;
+      border-radius: 5px;
+    }
+
+    input {
+      color: black;
+      margin-top: 7%;
+      border: 1px solid #6634F7;
+      border-radius: 5px;
+    }
+
+    input::placeholder {
+      color: black;
+      margin-top: 2%;
+      padding: 5px;
+      text-align: center;
+      color: #A5A2EC;
+
+    }
+
+    a {
+      color: #6634F7;
+      margin-top: 2%;
+      text-decoration: none;
+      transition: color 0.3ms;
+    }
+
+    a:hover {
+      color: #A5A2EC;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .contenedor-num {
+      margin-top: 7%;
+      display: flex;
+      height: 40px;
+      align-items: center;
+      line-height: 1.2rem;
+      text-align: center;
+      justify-content: space-between;
+
+      select {
+        width: 20%;
+        height: 2.2rem;
+        color: #6634F7;
+        border-color: #6634F7;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+    }
+
+    .contenedor-num input#telefono {
+      width: 75%;
+      height: 2.2rem;
+      margin: 0;
+
+    }
+
+    .contenedor-terminos {
+      margin-top: 2%;
+      margin-bottom: -2%;
+
+      #aceptoTerminos {
+        -webkit-transform: scale(1.5);
+        margin-right: 0.5rem;
+
+      }
+    }
+  }
+}
+
+.relleno-chapuzero{
+  height: 30em;
+}

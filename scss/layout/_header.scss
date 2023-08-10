@@ -1,0 +1,48 @@
+header {
+  /*estilos sobre navbar booststrap*/
+  .navbar-personal {
+    background-color: #6634F7 !important;
+
+    .navbar-nav {
+      .nav-link {
+        color: white;
+        transition: color 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #ccc;
+      }
+    }
+
+    .navbar-brand {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  /*estilos navbar inferior*/
+  .navbar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background: #A5A2EC;
+    text-align: center;
+
+    .enlaces-principales {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #131313;
+      text-decoration: none;
+      margin-left: 1em;
+    }
+
+    .enlaces-principales:hover {
+      color: whitesmoke;
+      text-shadow: 1px 1px 1px #6634F7;
+      transition: color 0.3s;
+    }
+  }
+}

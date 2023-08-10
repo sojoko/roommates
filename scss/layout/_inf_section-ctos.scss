@@ -1,0 +1,23 @@
+.row {
+  .col-sm-6 {
+    .card {
+      background-color: #A5A2EC;
+      color: #ffffff;
+
+      .card-body {
+        .btn-personal {
+          background-color: #6634F7;
+          border-radius: 4px;
+          border: 2px solid #6634F7;
+          font-weight: bold;
+          transition: color 0.5s;
+        }
+
+        .btn-personal:hover{
+          background-color: whitesmoke;
+          color: #6634F7;
+        }
+      }
+    }
+  }
+}
