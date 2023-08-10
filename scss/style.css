@@ -1,16 +1,18 @@
+/*resets*/
 body {
   font-family: Roboto, sans-serif;
   margin: 0px;
   position: relative;
 }
 
+/*H2 globales*/
 h2 {
   font-size: 2rem;
 }
 
 header {
   /*estilos sobre navbar booststrap*/
-  /*estilos navbar inferior*/
+  /*estilos navbar inferio*/
 }
 header .navbar-personal {
   background-color: #6634F7 !important;
@@ -55,6 +57,7 @@ header .navbar-2 .enlaces-principales:hover {
   flex-direction: row;
   border: 2px solid #6634F7;
   background-color: whitesmoke;
+  /*contenedor img*/
 }
 .sec-sup-index #cotenedor-textos-sup-index {
   width: 35%;
@@ -97,6 +100,7 @@ header .navbar-2 .enlaces-principales:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
+  /*Sobre escritura booststrap*/
 }
 .sec-mid2-index .contenedo-titulos {
   display: flex;
@@ -130,6 +134,9 @@ header .navbar-2 .enlaces-principales:hover {
   border: 3px solid #6634F7;
 }
 
+.row .col-sm-6 {
+  /*estilos booststrap sobre escritos*/
+}
 .row .col-sm-6 .card {
   background-color: #A5A2EC;
   color: #ffffff;
@@ -155,6 +162,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
+  /*contenedor iconos*/
 }
 footer h3 {
   text-shadow: 1px 1px 3px black;
@@ -189,6 +197,7 @@ footer .leyenda {
   font-weight: bold;
   font-size: 1.2rem;
   color: #6634F7;
+  /*contenedor del numero telefonico*/
 }
 .contenedor-form .form-registro button {
   background-color: #A5A2EC;
@@ -293,6 +302,7 @@ footer .leyenda {
   text-align: center;
 }
 
+/*parte de abajo del banner nosotros*/
 .sec-inf-nosotros {
   display: flex;
   justify-content: center;
