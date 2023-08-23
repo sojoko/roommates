@@ -22,3 +22,14 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .row{
+    .col-sm-6{
+      .card{
+        margin-top: 16px;
+      }
+    }
+  }
+  
+}

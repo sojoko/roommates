@@ -31,3 +31,59 @@ footer {
     text-align: center;
   }
 }
+
+@media (max-width: 640px) {
+
+  footer {
+    height: 10rem;
+    flex-direction: column;
+
+    .redes {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0em;
+
+      .contenedor-img-redes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+
+        .iconos-redes {
+          width: 1.5em;
+          align-self: center;
+          margin: 0;
+
+        }
+
+      }
+
+
+      h3 {
+        margin-top: 14px;
+      }
+
+
+    }
+
+
+    .leyenda {
+      margin-right: .4em;
+      margin-top: -24px;
+
+      h4 {
+        font-size: 18px;
+
+      }
+
+    }
+    .leyenda h4:nth-child(2){
+      margin-bottom: 16px;
+    }
+  }
+}

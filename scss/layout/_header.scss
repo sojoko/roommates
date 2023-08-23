@@ -46,3 +46,23 @@ header {
     }
   }
 }
+
+@media (max-width: 640px) {
+  .navbar-2{
+    div{
+     .enlaces-principales{
+       font-size: 16px;
+     }
+    }
+  }
+  .sec-sup-index{
+    #cotenedor-textos-sup-index{
+      H2{
+        font-size: 24px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}

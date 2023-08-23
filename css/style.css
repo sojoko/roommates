@@ -51,6 +51,17 @@ header .navbar-2 .enlaces-principales:hover {
   transition: color 0.3s;
 }
 
+@media (max-width: 640px) {
+  .navbar-2 div .enlaces-principales {
+    font-size: 16px;
+  }
+  .sec-sup-index #cotenedor-textos-sup-index H2 {
+    font-size: 24px;
+  }
+  .sec-sup-index #cotenedor-textos-sup-index p {
+    font-size: 12px;
+  }
+}
 .sec-sup-index {
   width: 100%;
   display: flex;
@@ -75,6 +86,36 @@ header .navbar-2 .enlaces-principales:hover {
   width: 100%;
 }
 
+@media (max-width: 640px) {
+  .sec-sup-index {
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #6634F7;
+  }
+  .sec-sup-index #cotenedor-textos-sup-index {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 12px;
+  }
+  .sec-sup-index #cotenedor-textos-sup-index H2 {
+    font-size: 24px;
+  }
+  .sec-sup-index #cotenedor-textos-sup-index p {
+    font-size: 12px;
+  }
+  .sec-sup-index #contenedor-img-sup-index {
+    width: 100%;
+  }
+  .sec-mid1-index .contenedo-titulos h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .sec-mid2-index .contenedo-titulos h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
 .sec-mid1-index {
   width: 100%;
   display: flex;
@@ -153,6 +194,11 @@ header .navbar-2 .enlaces-principales:hover {
   color: #6634F7;
 }
 
+@media (max-width: 640px) {
+  .row .col-sm-6 .card {
+    margin-top: 16px;
+  }
+}
 footer {
   display: flex;
   background: #6634F7;
@@ -182,6 +228,43 @@ footer .leyenda {
   text-align: center;
 }
 
+@media (max-width: 640px) {
+  footer {
+    height: 10rem;
+    flex-direction: column;
+  }
+  footer .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0em;
+  }
+  footer .redes .contenedor-img-redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  footer .redes .contenedor-img-redes .iconos-redes {
+    width: 1.5em;
+    align-self: center;
+    margin: 0;
+  }
+  footer .redes h3 {
+    margin-top: 14px;
+  }
+  footer .leyenda {
+    margin-right: 0.4em;
+    margin-top: -24px;
+  }
+  footer .leyenda h4 {
+    font-size: 18px;
+  }
+  footer .leyenda h4:nth-child(2) {
+    margin-bottom: 16px;
+  }
+}
 .contenedor-form {
   display: flex;
   width: 100%;
@@ -192,7 +275,7 @@ footer .leyenda {
 .contenedor-form .form-registro {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 25%;
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
@@ -276,6 +359,35 @@ footer .leyenda {
   height: 30em;
 }
 
+@media (max-width: 640px) {
+  .contenedor-form {
+    height: 70vh;
+  }
+  .contenedor-form .form-registro {
+    width: 80%;
+  }
+  .contenedor-form .form-registro input::placeholder {
+    font-size: 16px;
+  }
+  .contenedor-form .form-registro .contenedor-num {
+    font-size: 16px;
+  }
+  .contenedor-form .form-registro .contenedor-terminos {
+    margin-top: 1%;
+    margin-bottom: -1%;
+  }
+  .contenedor-form .form-registro .contenedor-terminos #aceptoTerminos {
+    -webkit-transform: scale(1.2);
+    margin-right: 0.1rem;
+  }
+  .contenedor-form .form-registro .contenedor-terminos label {
+    font-size: 15px;
+  }
+}
+.relleno-chapuzero {
+  height: 0em;
+}
+
 .sec-nosotros-banner {
   width: 100%;
   text-align: center;
@@ -314,6 +426,33 @@ footer .leyenda {
 .sec-inf-nosotros h2 {
   color: #6634F7;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  .sec-nosotros-banner img {
+    height: 300px;
+  }
+  .sec-nosotros-banner h1 {
+    font-size: 2.5rem;
+    margin-top: -80px;
+  }
+  .sec-mid-nosotros {
+    margin-top: 3em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+  }
+  .sec-mid-nosotros h2 {
+    font-size: 24px;
+  }
+  .sec-inf-nosotros {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    gap: 6%;
+    text-align: justify;
+  }
+  .sec-inf-nosotros h2 {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

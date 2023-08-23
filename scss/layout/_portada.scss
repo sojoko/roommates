@@ -26,3 +26,52 @@
   }
 
 }
+
+@media (max-width: 640px) {
+
+  .sec-sup-index {
+    flex-direction: column;
+    width: 100%;
+     border: 1px solid #6634F7;
+
+    #cotenedor-textos-sup-index {
+      width: 92%;
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-top: 12px;
+
+
+      H2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+     #contenedor-img-sup-index{
+       width: 100%;
+     }
+  }
+
+  .sec-mid1-index{
+    .contenedo-titulos{
+      h2{
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+  }
+
+  .sec-mid2-index{
+    .contenedo-titulos{
+      h2{
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
