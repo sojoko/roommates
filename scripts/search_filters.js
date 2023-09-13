@@ -11,8 +11,8 @@ const sites = [
         mixed: false,
         petFriendly: false,
         address: 'Bogota sur',
-        havePrivateBathRoom: true,
-        additionalInfo: 'ubicado cerca de la estacion de transmilenio "Portal Sur"'
+        havePrivateBathRoom: false,
+        additionalInfo: 'lindo apartamento ubicado cerca de la estacion de transmilenio "Portal Sur"'
 
 
     },
@@ -25,7 +25,7 @@ const sites = [
         petFriendly: false,
         address: 'Bogota norte',
         havePrivateBathRoom: true,
-        additionalInfo: 'casa que en el primer piso es una muebleria y en el segundo piso es residencial, pero con acceso independiente'
+        additionalInfo: 'Hermosa casa con terraza, lavanderia y garage'
     },
      {
         id: 3,
@@ -36,7 +36,7 @@ const sites = [
         petFriendly: true,
         address: 'Bogota norte',
         havePrivateBathRoom: true,
-        additionalInfo: 'casa que en el primer piso es una muebleria y en el segundo piso es residencial, pero con acceso independiente'
+        additionalInfo: 'apartamento de dos habitaciones, cerca de la Universidad de la Salle'
     }
 ]
 let filter = 0;
@@ -45,17 +45,18 @@ let filter = 0;
 
 //ciclo que le solicita al usuario la opcion por la cual desea filtrar su busqueda
 //se eliminaria cuando se agrege DOM
-while (filter <= 0 || filter > 5 || isNaN(filter)){
+while (filter <= 0 || filter > 7 || isNaN(filter)){
 
     filter = parseInt(prompt('seleccione como desea filtrar la busqueda: \n' +
         'PRESS 1, para buscar sitios solo para mujeres \n' +
-        'PRESS 2, para buscar  sitios solo para hombres \n' +
-        'PRESS 3, para buscar  sitios que acepten generos mixtos \n' +
+        'PRESS 2, para buscar sitios solo para hombres \n' +
+        'PRESS 3, para buscar sitios que acepten generos mixtos \n' +
         'PRESS 4, para buscar sitios que acepten mascotas \n' +
         'PRESS 5, para buscar sitios que sean apartamentos, \n' +
-        'PRESS 6, para buscar sitios que sean casas \n'))
+        'PRESS 6, para buscar sitios que sean casas \n' +
+        'PRESS 7, para buscar sitios que ofrezcan baños independientes \n'))
 
-    if (filter <= 0 || filter > 5 || isNaN(filter)){
+    if (filter <= 0 || filter > 7 || isNaN(filter)){
         alert('Ha introducido un valor erroneo, por favor, intentelo nuevamente')
 
     }
@@ -110,15 +111,23 @@ function filterByOption() {
                 }
             }
             break;
+        case 7:
+            for (let i = 0; i < sites.length; i++) {
+                if (sites[i].havePrivateBathRoom) {
+                    resultado.push(sites[i]);
+                }
+            }
+            break;
 
 
     }
-
-
     return resultado;
 }
 
-arrayWithFilteredResults= filterByOption();
-console.log(filterByOption());
+arrayWithFilteredResults = filterByOption();
+for (let i = 0; i < arrayWithFilteredResults.length; i++) {
+    alert('Hemos encontrado: ' + arrayWithFilteredResults[i].additionalInfo)
+}
+console.log(arrayWithFilteredResults)
 
-//El codigo continuaria con la manipulacion del doom, para usar este nuevo array solo con lo filtrado por el usuario para crear elementos en el html que muestren eso.
+//El codigo continuaria con la manipulacion del doom, para usar este nuevo array que contiene solo lo filtrado por el usuario para crear elementos en el html que muestren eso.
