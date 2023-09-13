@@ -2,7 +2,6 @@
 //un endpoint que le estaria pegando a la db de roommates.
 
 const sites = [
-
     {
         id: 1,
         type: 'apartament',
@@ -60,7 +59,6 @@ while (filter <= 0 || filter > 7 || isNaN(filter)){
         alert('Ha introducido un valor erroneo, por favor, intentelo nuevamente')
 
     }
-
 }
 
 //Funcion que filtra segun la opcion introducida por el usuario, mas adelante con manipulacion del dom se remplazaria la validacion por la opcion introducida por el usuario
@@ -118,16 +116,20 @@ function filterByOption() {
                 }
             }
             break;
-
-
     }
     return resultado;
 }
 
 arrayWithFilteredResults = filterByOption();
-for (let i = 0; i < arrayWithFilteredResults.length; i++) {
-    alert('Hemos encontrado: ' + arrayWithFilteredResults[i].additionalInfo)
+
+if (arrayWithFilteredResults.length === 0) {
+    alert('No hemos encontrado ningun resultado para tu busqueda');
+} else {
+    for (let i = 0; i < arrayWithFilteredResults.length; i++) {
+        alert('Hemos encontrado: ' + arrayWithFilteredResults[i].additionalInfo)
+    }
 }
+
 console.log(arrayWithFilteredResults)
 
 //El codigo continuaria con la manipulacion del doom, para usar este nuevo array que contiene solo lo filtrado por el usuario para crear elementos en el html que muestren eso.
