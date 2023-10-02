@@ -1,45 +1,4 @@
-//Sites, array con objetos que simulan o hacen un mackup de lo que podria devolver
-//un endpoint que le estaria pegando a la db de roommates.
-
-const sites = [
-    {
-        id: 1,
-        type: 'apartament',
-        onlyFemales: true,
-        onlyMales: false,
-        mixed: false,
-        petFriendly: false,
-        address: 'Bogota sur',
-        havePrivateBathRoom: false,
-        additionalInfo: 'lindo apartamento ubicado cerca de la estacion de transmilenio "Portal Sur"'
-
-
-    },
-    {
-        id: 2,
-        type: 'house',
-        onlyFemales: false,
-        onlyMales: true,
-        mixed: false,
-        petFriendly: false,
-        address: 'Bogota norte',
-        havePrivateBathRoom: true,
-        additionalInfo: 'Hermosa casa con terraza, lavanderia y garage'
-    },
-     {
-        id: 3,
-        type: 'apartament',
-        onlyFemales: false,
-        onlyMales: true,
-        mixed: false,
-        petFriendly: true,
-        address: 'Bogota norte',
-        havePrivateBathRoom: true,
-        additionalInfo: 'apartamento de dos habitaciones, cerca de la Universidad de la Salle'
-    }
-]
 let filter = 0;
-
 
 
 //ciclo que le solicita al usuario la opcion por la cual desea filtrar su busqueda
@@ -61,66 +20,55 @@ while (filter <= 0 || filter > 7 || isNaN(filter)){
     }
 }
 
-//Funcion que filtra segun la opcion introducida por el usuario, mas adelante con manipulacion del dom se remplazaria la validacion por la opcion introducida por el usuario
-// a cambio del value suministrado segun las pulsaciones en diferentes botones en la web.
-function filterByOption() {
+//Funcion que filtra segun la opcion introducida por el usuario validando los datos del mock (arreglo de objetos)
+function filterByOption(filter, sites) {
     const resultado = [];
 
-    switch (filter) {
-        case 1:
-            for (let i = 0; i < sites.length; i++) {
-                if (sites[i].onlyFemales) {
-                    resultado.push(sites[i]);
+    sites.forEach((site) => {
+        switch (filter) {
+            case 1:
+                if (site.onlyFemales) {
+                    resultado.push(site);
                 }
-            }
-            break;
-        case 2:
-             for (let i = 0; i < sites.length; i++) {
-                if (sites[i].onlyMales) {
-                    resultado.push(sites[i]);
+                break;
+            case 2:
+                if (site.onlyMales) {
+                    resultado.push(site);
                 }
-            }
-            break;
-        case 3:
-             for (let i = 0; i < sites.length; i++) {
-                if (sites[i].mixed) {
-                    resultado.push(sites[i]);
+                break;
+            case 3:
+                if (site.mixed) {
+                    resultado.push(site);
                 }
-            }
-            break;
-        case 4:
-            for (let i = 0; i < sites.length; i++) {
-                if (sites[i].petFriendly) {
-                    resultado.push(sites[i]);
+                break;
+            case 4:
+                if (site.petFriendly) {
+                    resultado.push(site);
                 }
-            }
-            break;
-        case 5:
-            for (let i = 0; i < sites.length; i++) {
-                if (sites[i].type == 'apartament') {
-                    resultado.push(sites[i]);
+                break;
+            case 5:
+                if (site.type === 'apartament') {
+                    resultado.push(site);
                 }
-            }
-            break;
-        case 6:
-            for (let i = 0; i < sites.length; i++) {
-                if (sites[i].type == 'house') {
-                    resultado.push(sites[i]);
+                break;
+            case 6:
+                if (site.type === 'house') {
+                    resultado.push(site);
                 }
-            }
-            break;
-        case 7:
-            for (let i = 0; i < sites.length; i++) {
-                if (sites[i].havePrivateBathRoom) {
-                    resultado.push(sites[i]);
+                break;
+            case 7:
+                if (site.havePrivateBathRoom) {
+                    resultado.push(site);
                 }
-            }
-            break;
-    }
+                break;
+        }2
+    });
+
     return resultado;
 }
 
-arrayWithFilteredResults = filterByOption();
+
+arrayWithFilteredResults = filterByOption(filter,sites);
 
 if (arrayWithFilteredResults.length === 0) {
     alert('No hemos encontrado ningun resultado para tu busqueda');
