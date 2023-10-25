@@ -13,11 +13,7 @@ let filter = 0;
 //se eliminaria cuando se agrege DOM
 
 
-//Funcion que filtra segun la opcion introducida por el usuario validando los datos del mock (arreglo de objetos)
-
-
-
-
+// seccion de eventos
 casas.addEventListener('click', ()=>{
      filter = 6;
     renderizarTarjetas(filterByOption(filter,sites));
@@ -62,31 +58,10 @@ window.addEventListener('load',()=>{
     console.log(localStorage.getItem('seleccion'))
 })
 
-const resultados = [
-    {
-        image: "../img/casa1.jpg",
-        title: "Linda casa el norte de Bogota",
-        price: "1.200.000 COP / Mes",
-        description: "Busco un compañero, hombre y que trabaje o estudie",
-    },
-    {
-        image: "../img/casa1.jpg",
-        title: "Linda casa el norte de Bogota",
-        price: "1.200.000 COP / Mes",
-        description: "Busco un compañero, hombre y que trabaje o estudie",
-    },
-    {
-        image: "../img/casa1.jpg",
-        title: "Linda casa el norte de Bogota",
-        price: "1.200.000 COP / Mes",
-        description: "Busco un compañero, hombre y que trabaje o estudie",
-    },
-    // Otras tarjetas...
-];
 
-
+// Funcion que renderiza las card de forma rinamica seguin el arreglo construido por la funcion de filtrado
 function renderizarTarjetas() {
-  const contenedorResultados = document.querySelector(".row-cols-1.row-cols-md-4.g-4"); // Elige el contenedor de tarjetas
+  const contenedorResultados = document.querySelector(".row-cols-1.row-cols-md-4.g-4");
     contenedorResultados.innerHTML = "";
   resultados1 = filterByOption(filter, sites);
   resultados1.forEach((resultado) => {
@@ -108,6 +83,7 @@ function renderizarTarjetas() {
 }
 
 
+// Funcion que filtra segun la seleccion del usuario
 function filterByOption(filter, sites) {
     const resultado = [];
 
@@ -160,6 +136,3 @@ function filterByOption(filter, sites) {
 }
 
 
-
-
-//El codigo continuaria con la manipulacion del doom, para usar este nuevo array que contiene solo lo filtrado por el usuario para crear elementos en el html que muestren eso.
