@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/filtros.css">
     <title>Espacios ofrecidos por personas</title>
     <meta name="description" content="Roommates aplicacion web para conectar personas que arriendan sus espacios con personas que buscan sus espacios, conecta roommates en todo el pais.">
     <meta name="keywords" content="Arriendo de habitaciones, arriendo de apartamentos, arriendo de casas, compañeros de habitacion, compañeros de arriendo, compartir habitacion, compartir arriendo.">
@@ -52,136 +53,91 @@
         </div>
     </nav>
 </header>
+<section class="sec-filtros">
+    <div id="casas" class="buttons-filtros">
+        <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+                 width="64px" height="64px">
+                <g fill="#a5a2ec" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                   style="mix-blend-mode: normal">
+                    <g transform="scale(4,4)">
+                        <path d="M32,3l-31,25l0.49219,0.6543c1.367,1.823 3.97728,2.13741 5.73828,0.69141l24.76953,-20.3457l24.76953,20.3457c1.761,1.446 4.37128,1.13159 5.73828,-0.69141l0.49219,-0.6543l-9,-7.25781v-12.74219h-9v5.48438zM32,13l-24,19v24h48v-21zM26,34h12v18h-12z"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <p>Casas</p>
+    </div>
+    <div id="apartamentos" class="buttons-filtros">
+        <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg xmlns="http://www.w3.org/2000/svg" width="62" height="64" viewBox="0 0 448 512" fill="#A5A2EC">
+                <path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"/>
+            </svg>
+        </div>
+        <p>Apartamentos</p>
+    </div>
+    <div id="mascotas" class="buttons-filtros">
+        <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="#A5A2EC" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40.1001 33.5099C37.9122 31.438 35.0134 30.2832 32.0001 30.2832C28.9868 30.2832 26.088 31.438 23.9001 33.5099L14.1301 42.7499C8.5301 47.8399 12.5701 57.5699 20.1301 57.1899C24.2301 57.0799 27.5601 54.9799 31.9901 55.0599C36.5801 54.9799 39.9901 56.8299 44.1101 57.1899C51.5401 57.3599 55.3801 47.7399 49.8601 42.7499L40.1001 33.5099Z"
+                      fill="#A5A2EC"/>
+                <path d="M56.9201 19.93C53.1001 19.18 50.1801 23.43 49.4201 27.09C47.1401 38.42 58.1201 40.58 60.6901 29.59C61.7401 24.88 60.0801 20.63 56.9201 19.93Z"
+                      fill="#A5A2EC"/>
+                <path d="M40.7301 26.05C44.5301 26.05 47.6201 21.73 47.6201 16.43C47.2401 3.66998 34.2201 3.66998 33.8501 16.43C33.8501 21.73 36.9401 26.05 40.7301 26.05Z"
+                      fill="#A5A2EC"/>
+                <path d="M14.58 27.09C13.83 23.43 10.9 19.18 7.08004 19.93C3.86238e-05 21.72 3.00004 36.81 9.92004 36.85C13.84 36.72 15.65 32.17 14.58 27.09Z"
+                      fill="A5A2EC"/>
+                <path d="M23.27 26.05C27.06 26.05 30.15 21.73 30.15 16.43C29.78 3.66998 16.76 3.66998 16.38 16.43C16.38 21.73 19.47 26.05 23.27 26.05Z"
+                      fill="#A5A2EC"/>
+            </svg>
+
+        </div>
+        <p>Mascotas</p>
+    </div>
+    <div id="hombres" class="buttons-filtros">
+        <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#A5A2EC;}</style></defs><title>n</title><path class="cls-1" d="M52.2586,72.67626l6.74487,8.99455-5.05971,43.75525H5.567S5.90819,106.48062,7.83352,95.249a11.98538,11.98538,0,0,1,6.45842-8.69964c11.23157-5.599,35.87708-13.8731,35.87708-13.8731Z"/><path class="cls-1" d="M122.433,125.42605h-47.113L68.99648,81.675l6.74487-8.99876h2.08542s24.64972,8.27413,35.88135,13.8731a11.99594,11.99594,0,0,1,6.45837,8.69964C122.09176,106.48062,122.433,125.42605,122.433,125.42605Z"/><path class="cls-1" d="M64,64.62753h0a22.227,22.227,0,0,1-21.81889-17.987L38.78137,29.1458A23.419,23.419,0,0,1,61.98722,2.57395h4.02555A23.419,23.419,0,0,1,89.21863,29.1458L85.81891,46.64051A22.227,22.227,0,0,1,64,64.62753Z"/></svg>
+        </div>
+        <p>Solo hombres</p>
+    </div>
+    <div id="mujeres" class="buttons-filtros">
+        <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#A5A2EC;}</style></defs><title>b</title><path class="cls-1" d="M39.53613,74.30414h13.89V66.518a24.45357,24.45357,0,0,1-2.93869-1.80635,21.91825,21.91825,0,0,1-3.31074-3.61267,20.91721,20.91721,0,0,1-4.15727-12.55278v-8.994a40.37779,40.37779,0,0,0,7.78617.74413c9.23123,0,17.21689-3.00341,21.06145-7.36562a17.7989,17.7989,0,0,0,5.41364,4.001,30.60988,30.60988,0,0,0,7.6999,2.58819v9.02632A21.06318,21.06318,0,0,1,77.491,64.64155a4.2598,4.2598,0,0,1-.53381.39362L74.6925,66.51259v7.79155H88.47465c.20491,0,.40441-.01079.6147-.027H97.749V36.49481a33.749,33.749,0,0,0-33.749-33.749h-.0001a33.749,33.749,0,0,0-33.749,33.749V74.27718h8.65967C39.12094,74.29335,39.33123,74.30414,39.53613,74.30414Z"/><path class="cls-1" d="M122.04741,122.355c-1.032-5.70592-3.2806-17.98907-3.79861-19.539-2.90314-8.68535-10.669-12.27113-18.58736-15.34293Q93.57809,85.106,87.47863,82.74691c-.07226-.02408-.14053-.05219-.21281-.0803-.02408-.008-.05219-.02007-.07629-.02809l-13.275,2.01974-.22486,1.20462A13.39769,13.39769,0,0,1,72.465,89.20775a25.8707,25.8707,0,0,1-2.50566,3.92707,36.60348,36.60348,0,0,1-3.29261,3.75442,35.67558,35.67558,0,0,1-2.66626,2.40925,34.89122,34.89122,0,0,1-2.66626-2.40925,37.1449,37.1449,0,0,1-3.29664-3.75442,26.32983,26.32983,0,0,1-2.50564-3.9311,13.29252,13.29252,0,0,1-1.22067-3.34083l-.22889-1.20462L40.82748,82.63853c-.0321.008-.06422.02408-.09235.0321-.07226.02811-.14053.05622-.21281.08032q-6.0894,2.36706-12.18279,4.72213c-7.91439,3.0718-15.68021,6.65758-18.58736,15.34293-.518,1.55-2.76665,13.83311-3.79861,19.539a2.45919,2.45919,0,0,0,2.42128,2.89913H119.62609A2.46127,2.46127,0,0,0,122.04741,122.355ZM50.05494,111.50536c-.91151-1.48567-1.75074-3.02761-2.54577-4.66591a51.73874,51.73874,0,0,1-2.69036-6.68968,38.707,38.707,0,0,1-1.62622-7.19163l-.10843-.97575c-.02007-.2088-.02811-.42564-.04014-.63845l-.0241-.51c-.01205-.253-.0241-.50191-.03212-.7549l.02007-1.036V89.011a18.07845,18.07845,0,0,1,.15661-1.92744l.01205-.11242c.012-.13652.03613-.29311.06424-.46177l7.9666,1.21266a18.57055,18.57055,0,0,0,1.24074,3.05572A29.737,29.737,0,0,0,55.283,95.22686a39.96344,39.96344,0,0,0,3.60587,4.1158q1.19255,1.18654,2.41725,2.22453ZM84.98106,90.842l-.0241.50193c-.01205.21684-.02007.42965-.04016.61838l-.10841.97976a38.75572,38.75572,0,0,1-1.62224,7.20366,52.992,52.992,0,0,1-2.69434,6.69371c-.79506,1.6383-1.63426,3.18023-2.54577,4.66591l-11.25119-9.93816q1.22266-1.036,2.41725-2.22453a39.96627,39.96627,0,0,0,3.60587-4.1158,29.87153,29.87153,0,0,0,2.83086-4.44508A18.05931,18.05931,0,0,0,76.78958,87.722l7.96662-1.21266a4.28519,4.28519,0,0,1,.06825.46177l.01205.11645a18.00715,18.00715,0,0,1,.15659,1.92341l.02009,1.06807C85.00514,90.33608,84.99309,90.589,84.98106,90.842Z"/></svg>
+        </div>
+        <p>Solo mujeres</p>
+    </div>
+     <div id="mixed"   class="buttons-filtros">
+         <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#A5A2EC;}.cls-2{fill:#A5A2EC;}</style></defs><title>b</title><path class="cls-1" d="M19.51789,67.82829h6.67656V64.0857a11.75649,11.75649,0,0,1-1.4125-.86822,10.53194,10.53194,0,0,1-1.59139-1.73664,10.0535,10.0535,0,0,1-1.99832-6.03374V51.12394a19.41147,19.41147,0,0,0,3.74259.35767c4.43721,0,8.27574-1.4436,10.12372-3.54045a8.55663,8.55663,0,0,0,2.60215,1.9232,14.71179,14.71179,0,0,0,3.70116,1.2441v4.33864a10.12453,10.12453,0,0,1-3.60009,7.73659,2.0386,2.0386,0,0,1-.25655.18932l-1.08858.71v3.74524h6.6247c.09853,0,.19441-.00509.29548-.01293h4.1625v-18.161a16.22231,16.22231,0,0,0-16.22225-16.2223H31.277a16.22228,16.22228,0,0,0-16.22225,16.2223v18.161h4.1625C19.31834,67.8232,19.41941,67.82829,19.51789,67.82829Z"/><path class="cls-1" d="M59.24273,82.99988c-1.49658-4.47737-5.49994-6.32586-9.58193-7.90942-2.09069-.81356-4.18754-1.62081-6.28032-2.4364-.03725-.01242-.07247-.02687-.10972-.04132-.01242-.00417-.02687-.01038-.03934-.01445L36.388,73.63944l-.11588.621a6.90638,6.90638,0,0,1-.63136,1.72432,13.33045,13.33045,0,0,1-1.29169,2.02438,18.87411,18.87411,0,0,1-1.69735,1.93552,18.407,18.407,0,0,1-1.37449,1.242,18.01249,18.01249,0,0,1-1.37449-1.242,19.1544,19.1544,0,0,1-1.69943-1.93552,13.57587,13.57587,0,0,1-1.29169-2.02652,6.853,6.853,0,0,1-.62923-1.72218l-.118-.621-6.833-1.04115c-.01654.00407-.03313.01232-.04763.01649-.03725.01445-.07242.02891-.10967.04132q-3.13917,1.22034-6.28037,2.43436c-4.0799,1.58355-8.08326,3.432-9.58193,7.90942-.267.799-1.42619,7.13108-1.95822,10.07253A1.26774,1.26774,0,0,0,2.60183,94.5669h57.3509A1.26876,1.26876,0,0,0,61.201,93.07241C60.669,90.131,59.50976,83.79888,59.24273,82.99988Zm-35.1545,4.4794c-.46988-.76582-.90252-1.56075-1.31235-2.40535A26.66324,26.66324,0,0,1,21.389,81.62539a19.95351,19.95351,0,0,1-.83834-3.70727l-.05588-.503c-.01038-.10769-.0145-.21945-.02071-.32917l-.01242-.26291c-.00621-.13039-.01242-.25873-.01654-.38912l.01033-.53406v-.01659a9.334,9.334,0,0,1,.08071-.99361l.00621-.05791c.00621-.07033.01863-.15115.03313-.23807l4.10687.62516A9.57188,9.57188,0,0,0,25.322,76.794a15.3227,15.3227,0,0,0,1.46141,2.2936A20.60154,20.60154,0,0,0,28.6422,81.2094q.61483.61162,1.24614,1.1467ZM42.093,76.8272l-.01247.25873c-.00621.11176-.01033.22148-.02071.31879l-.05588.50505a19.97477,19.97477,0,0,1-.83626,3.71348,27.30247,27.30247,0,0,1-1.38894,3.45067c-.40988.8446-.84252,1.63953-1.3124,2.40535l-5.8-5.12319q.63032-.53406,1.24609-1.1467a20.60212,20.60212,0,0,0,1.85888-2.12179,15.39961,15.39961,0,0,0,1.45933-2.29146,9.3128,9.3128,0,0,0,.63961-1.57734l4.10687-.62516a2.22057,2.22057,0,0,1,.03517.23807l.00621.06a9.28486,9.28486,0,0,1,.08071.99158l.01038.55065C42.10534,76.56643,42.09913,76.69672,42.093,76.8272Z"/><path class="cls-2" d="M85.04844,75.77873l4.03456.61447a10.21664,10.21664,0,0,0,.44444.98934,16.78852,16.78852,0,0,0,1.5922,2.50419A22.94656,22.94656,0,0,0,93.09053,82.132,20.86544,20.86544,0,0,0,94.70207,83.585l1.95547,1.58844.06565-.05415.0657.05415L98.74436,83.585a20.86543,20.86543,0,0,0,1.61154-1.45307,22.94656,22.94656,0,0,0,1.97089-2.24525,16.79263,16.79263,0,0,0,1.5922-2.50419,10.21613,10.21613,0,0,0,.44439-.98934l4.03461-.61447.01929.00774,6.19487-.916q-2.85778-1.1014-5.71175-2.21441c-.03868-.0115-.07344-.027-.11211-.04244-.01547-.00387-.03089-.0115-.04636-.01537h-.01547L101.894,73.63781l-.1198.6222a6.77389,6.77389,0,0,1-.62607,1.72361A13.56366,13.56366,0,0,1,99.8535,78.0085,19.25593,19.25593,0,0,1,98.157,79.94474a17.33489,17.33489,0,0,1-1.36808,1.2327l-.0657-.054-.06565.054a17.33489,17.33489,0,0,1-1.36808-1.2327,19.24953,19.24953,0,0,1-1.69653-1.93623,13.5683,13.5683,0,0,1-1.29464-2.02489,6.77359,6.77359,0,0,1-.626-1.72361l-.1198-.6222-6.83254-1.03952h-.01542c-.01547.00387-.03094.0115-.04636.01537-.03868.01547-.07344.03094-.11211.04244q-2.852,1.11316-5.71175,2.21441l6.19482.916Z"/><path class="cls-1" d="M126.64646,93.07241c-.52943-2.94094-1.6888-9.27485-1.95542-10.071a10.93608,10.93608,0,0,0-5.7687-6.22886L108.002,78.38714l-.01094-.0055-1.91114.291a19.45928,19.45928,0,0,1-1.75226,2.73279,25.5756,25.5756,0,0,1-2.19532,2.50286,23.40172,23.40172,0,0,1-1.807,1.62874l-3.54864,2.88242-.05359-.04407-.05359.04428L93.11816,85.5346a23.38118,23.38118,0,0,1-1.80391-1.6263,25.5865,25.5865,0,0,1-2.18744-2.492,19.54255,19.54255,0,0,1-1.76015-2.74368l-1.91114-.291-.01094.0055L74.52435,76.77265a10.92212,10.92212,0,0,0-5.76483,6.22876c-.26662.79615-1.426,7.13006-1.95934,10.071a1.266,1.266,0,0,0,1.11687,1.48777.58472.58472,0,0,0,.11593.00774h57.34978c.04636,0,.08886-.00387.1314-.00774A1.26434,1.26434,0,0,0,126.64646,93.07241Z"/><path class="cls-1" d="M82.34669,49.50477l1.97288,10.17136a12.6355,12.6355,0,0,0,24.80731,0l1.75-9.01693.24479-1.27128a13.33013,13.33013,0,0,0-5.96982-12.97733,12.98068,12.98068,0,0,0-2.426-1.23851,13.258,13.258,0,0,0-4.81529-.90242H95.53583A13.32948,13.32948,0,0,0,82.32475,49.38792Zm4.2965.252c5.90774,0,11.198-1.38833,14.76018-3.58035a17.97086,17.97086,0,0,0,6.75529,3.7375L106.36848,59.139a9.82512,9.82512,0,0,1-19.29052,0l-1.82671-9.40767C85.71156,49.74956,86.17554,49.75678,86.64319,49.75678Z"/></svg>
+        </div>
+        <p>Mixed</p>
+    </div>
+     <div id="bath" class="buttons-filtros">
+         <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill="#A5A2EC" viewBox="0 0 48 48"><path d="M13.902,5.869c.23-.23,.477-.434,.731-.628-.838-.798-1.93-1.242-3.094-1.242-2.51,0-4.54,2.03-4.54,4.54v9.46h2V8.54c0-1.4,1.14-2.54,2.54-2.54,.628,0,1.224,.236,1.692,.659,.203-.275,.422-.542,.67-.79Z"/><path d="M16.83,15.255c-.175,0-.351-.046-.509-.139-.408-.242-.729-.484-1.007-.763-1.947-1.948-1.947-5.121,.002-7.07s5.121-1.949,7.07,0c.278,.278,.521,.599,.762,1.006,.231,.394,.168,.894-.154,1.216l-5.457,5.457c-.192,.192-.448,.293-.707,.293Z"/><path d="M41,43.73c-.96,.55-2.18,.23-2.73-.73l-.07-.08c1.23-.54,2.36-1.27,3.36-2.14l.17,.22c.55,.96,.23,2.18-.73,2.73Z"/><path d="M9.8,42.92l-.07,.08c-.55,.96-1.77,1.28-2.73,.73s-1.28-1.77-.73-2.73l.17-.22c1,.87,2.13,1.6,3.36,2.14Z"/><path d="M43.5,27H4.5c-.17,0-.34-.01-.5-.03v4.03c0,6.07,4.93,11,11,11h18c6.07,0,11-4.93,11-11v-4.03c-.16,.02-.33,.03-.5,.03Z"/><rect x="2" y="20" width="44" height="5" rx="2.5" ry="2.5"/></svg>
+        </div>
+        <p>Baño privado</p>
+    </div>
+
+</section>
+
   <section class="sec-mid1-index">
       <div class="contenedo-titulos">
           <h2>Personas que ofrecen sus espacios y buscan un compañero de cuarto</h2>
       </div>
-   <div class="container mt-4">
+        <div class="container mt-4">
           <div class="row row-cols-1 row-cols-md-4 g-4">
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/casa1.jpg" class="card-img-top img-fluid img-card" alt="casa">
-                      <div class="card-body">
-                          <h5 class="card-title">Linda casa el norte de Bogota</h5>
-                          <h6 class="card-title">1.200.000 COP / Mes</h6>
-                          <p class="card-text">Busco un compañero, hombre y que trabaje o estudie</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto1.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Apartamento bien ubicado en Bogota Occidente</h5>
-                          <h6 class="card-title">1.600.000 COP / Mes</h6>
-                          <p class="card-text">Busco un roomie hombre que trabaje, no se permiten mascotas</p>
-                      </div>
-                  </div>
-              </div>
-                  <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto2.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Apto completamente amoblado, Chapinero Bogota</h5>
-                          <h6 class="card-title">1.400.000 COP / Mes</h6>
-                          <p class="card-text">Solo mujeres sin mascocas ni visitas</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto3.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Lindo Apto en el sur de Medellin</h5>
-                          <h6 class="card-title">900.000 COP / Mes</h6>
-                          <p class="card-text">Busco roomie mujer que estudie o trabaje</p>
-                      </div>
-                  </div>
-              </div>
-               <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/casa1.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Linda casa el norte de Bogota</h5>
-                          <h6 class="card-title">1.200.000 COP / Mes</h6>
-                          <p class="card-text">Busco un compañero, hombre y que trabaje o estudie</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto1.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Apartamento bien ubicado en Bogota Occidente</h5>
-                          <h6 class="card-title">1.600.000 COP / Mes</h6>
-                          <p class="card-text">Busco un roomie hombre que trabaje, no se permiten mascotas</p>
-                      </div>
-                  </div>
-              </div>
-                  <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto2.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Apto completamente amoblado, Chapinero Bogota</h5>
-                          <h6 class="card-title">1.400.000 COP / Mes</h6>
-                          <p class="card-text">Solo mujeres sin mascocas ni visitas</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto3.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Lindo Apto en el sur de Medellin</h5>
-                          <h6 class="card-title">900.000 COP / Mes</h6>
-                          <p class="card-text">Busco roomie mujer que estudie o trabaje</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/casa1.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Linda casa el norte de Bogota</h5>
-                          <h6 class="card-title">1.200.000 COP / Mes</h6>
-                          <p class="card-text">Busco un compañero, hombre y que trabaje o estudie</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto1.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Apartamento bien ubicado en Bogota Occidente</h5>
-                          <h6 class="card-title">1.600.000 COP / Mes</h6>
-                          <p class="card-text">Busco un roomie hombre que trabaje, no se permiten mascotas</p>
-                      </div>
-                  </div>
-              </div>
-                  <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto2.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Apto completamente amoblado, Chapinero Bogota</h5>
-                          <h6 class="card-title">1.400.000 COP / Mes</h6>
-                          <p class="card-text">Solo mujeres sin mascocas ni visitas</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img src="../img/apto3.jpg" class="card-img-top img-fluid img-card" alt="Apartamento">
-                      <div class="card-body">
-                          <h5 class="card-title">Lindo Apto en el sur de Medellin</h5>
-                          <h6 class="card-title">900.000 COP / Mes</h6>
-                          <p class="card-text">Busco roomie mujer que estudie o trabaje</p>
-                      </div>
-                  </div>
-              </div>
-              </div>
           </div>
       </div>
   </section>
+
+
+
+
 
 <footer>
     <div class="redes">

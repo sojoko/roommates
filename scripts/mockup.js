@@ -3,70 +3,64 @@
 const sites = [
     {
         id: 1,
+        type: 'house',
+        onlyFemales: true,
+        onlyMales: true,
+        mixed: true,
+        petFriendly: false,
+        havePrivateBathRoom: false,
+        title: "Linda casa el norte de Bogota",
+        image: "../img/casa1.jpg",
+        price: "1.200.000 COP / Mes",
+        additionalInfo: 'Busco un compañero, hombre y que trabaje o estudie'
+
+    },
+    {
+        id: 2,
         type: 'apartament',
         onlyFemales: true,
         onlyMales: false,
         mixed: false,
         petFriendly: false,
-        address: 'Bogota sur',
         havePrivateBathRoom: false,
+        title: "Linda casa el norte de Bogota",
+        image: "../img/apto1.jpg",
+        price: "1.100.000 COP / Mes",
         additionalInfo: 'lindo apartamento ubicado cerca de la estacion de transmilenio "Portal Sur"'
 
 
     },
-    {
-        id: 2,
-        type: 'house',
-        onlyFemales: false,
-        onlyMales: true,
-        mixed: false,
-        petFriendly: false,
-        address: 'Bogota norte',
-        havePrivateBathRoom: true,
-        additionalInfo: 'Hermosa casa con terraza, lavanderia y garage'
-    },
-    {
+
+     {
         id: 3,
         type: 'apartament',
-        onlyFemales: false,
-        onlyMales: true,
+        onlyFemales: true,
+        onlyMales: false,
         mixed: false,
-        petFriendly: true,
-        address: 'Bogota norte',
-        havePrivateBathRoom: true,
-        additionalInfo: 'apartamento de dos habitaciones, cerca de la Universidad de la Salle'
+        petFriendly: false,
+        havePrivateBathRoom: false,
+        title: "Linda casa el norte de Bogota",
+        image: "../img/apto2.jpg",
+        price: "1.800.000 COP / Mes",
+        additionalInfo: 'Apartamento ubicado al frende de la Uni Andes'
+
+
     },
-    {
+         {
         id: 4,
         type: 'apartament',
         onlyFemales: false,
         onlyMales: true,
         mixed: false,
-        petFriendly: false,
-        address: 'Bogota occidente',
-        havePrivateBathRoom: true,
-        additionalInfo: 'apartamento de dos habitaciones, cerca del aeropuerto'
-    },
-    {
-        id: 5,
-        type: 'apartament',
-        onlyFemales: true,
-        onlyMales: false,
-        mixed: false,
         petFriendly: true,
-        address: 'Bogota oriente',
         havePrivateBathRoom: true,
-        additionalInfo: 'hermoso apartamento, cerca de universidades'
+        title: "Linda casa el norte de Bogota",
+        image: "../img/apto3.jpg",
+        price: "2.800.000 COP / Mes",
+        additionalInfo: 'Apartamento ubicado al frende al norte de la ciudad'
+
+
     },
-    {
-        id: 6,
-        type: 'apartament',
-        onlyFemales: false,
-        onlyMales: false,
-        mixed: true,
-        petFriendly: false,
-        address: 'Bogota norte',
-        havePrivateBathRoom: true,
-        additionalInfo: 'apartamento de dos habitaciones para hombres y mujeres, que trabajen o estudien'
-    }
+
+
 ]

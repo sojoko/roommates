@@ -1,0 +1,79 @@
+.sec-filtros{
+    display: flex;
+    gap: 28px;
+    margin-top: 16px;
+    margin-bottom: -16px;
+    width: 100%;
+    justify-content: center;
+}
+
+.buttons-filtros{
+    width: 105px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+}
+.buttons-filtros p{
+    color: #A5A2EC;
+    line-height: 18px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.icon-container svg{
+    width: 48px;
+    height: 48px;
+
+}
+
+.buttons-filtros svg{
+    transition: all 0.2s;
+}
+.buttons-filtros svg g{
+    transition: all 0.2s;
+}
+.buttons-filtros svg path{
+    transition: all 0.2s;
+}
+
+
+.buttons-filtros:hover svg g{
+    fill: #6634F7;
+    cursor: pointer;
+
+}
+.buttons-filtros:hover svg {
+    fill: #6634F7;
+    cursor: pointer;
+
+}
+
+.buttons-filtros:hover svg path{
+    fill: #6634F7;
+    cursor: pointer;
+}
+
+.buttons-filtros:hover p{
+    color: #6634F7;
+    cursor: pointer;
+}
+
+.buttons-filtros:hover{
+    border-bottom: 2px solid #6634F7;
+    cursor: pointer;
+}
+
+
+.sec-resultados{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.dinamic{
+
+}

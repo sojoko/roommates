@@ -121,6 +121,7 @@ header .navbar-2 .enlaces-principales:hover {
   display: flex;
   flex-direction: column;
   margin-top: 2em;
+
 }
 .sec-mid1-index .contenedo-titulos {
   display: flex;
