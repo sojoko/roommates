@@ -7,8 +7,12 @@ let mixed = document.getElementById('mixed')
 let haveBathRoom = document.getElementById('bath')
 
 let filter = 0;
+fx.base = "COP"
+fx.rates = {
+    "USD": 0.00025
+}
 
-
+console.log(fx.rates)
 //ciclo que le solicita al usuario la opcion por la cual desea filtrar su busqueda
 //se eliminaria cuando se agrege DOM
 
@@ -61,19 +65,24 @@ window.addEventListener('load',()=>{
 
 // Funcion que renderiza las card de forma rinamica seguin el arreglo construido por la funcion de filtrado
 function renderizarTarjetas() {
+
+
   const contenedorResultados = document.querySelector(".row-cols-1.row-cols-md-4.g-4");
     contenedorResultados.innerHTML = "";
   resultados1 = filterByOption(filter, sites);
   resultados1.forEach((resultado) => {
     const tarjeta = document.createElement("div");
     tarjeta.classList.add("col");
+    const priceUSD = fx.convert(resultado.price, {from: "COP", to:"USD"});
+
     tarjeta.innerHTML = `
       <div class="card h-100">
         <img src="${resultado.image}" class="card-img-top img-fluid img-card" alt="casa">
         <div class="card-body">
           <h5 class="card-title">${resultado.title}</h5>
-          <h6 class="card-title">${resultado.price}</h6>
-          <p class="card-text">${resultado.additionalInfo}</p>
+          <h6 class="card-title">${fx.base +" "+ resultado.price.toLocaleString()}</h6>
+          <h6 class="card-title">${"USD " + priceUSD.toLocaleString()}</h6>
+          <p class="card-text">${resultado.additionalInfo}</p>        
         </div>
       </div>
     `;

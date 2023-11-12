@@ -11,7 +11,7 @@ const sites = [
         havePrivateBathRoom: false,
         title: "Linda casa el norte de Bogota",
         image: "../img/casa1.jpg",
-        price: "1.200.000 COP / Mes",
+        price: 1200000,
         additionalInfo: 'Busco un compañero, hombre y que trabaje o estudie'
 
     },
@@ -25,7 +25,7 @@ const sites = [
         havePrivateBathRoom: false,
         title: "Linda casa el norte de Bogota",
         image: "../img/apto1.jpg",
-        price: "1.100.000 COP / Mes",
+        price: 1100000,
         additionalInfo: 'lindo apartamento ubicado cerca de la estacion de transmilenio "Portal Sur"'
 
 
@@ -41,7 +41,7 @@ const sites = [
         havePrivateBathRoom: false,
         title: "Linda casa el norte de Bogota",
         image: "../img/apto2.jpg",
-        price: "1.800.000 COP / Mes",
+        price: 1800000,
         additionalInfo: 'Apartamento ubicado al frende de la Uni Andes'
 
 
@@ -56,7 +56,7 @@ const sites = [
         havePrivateBathRoom: true,
         title: "Linda casa el norte de Bogota",
         image: "../img/apto3.jpg",
-        price: "2.800.000 COP / Mes",
+        price: 2800000,
         additionalInfo: 'Apartamento ubicado al frende al norte de la ciudad'
 
 
