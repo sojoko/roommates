@@ -1,19 +1,26 @@
 .sec-filtros{
     display: flex;
-    gap: 28px;
     margin-top: 16px;
     margin-bottom: -16px;
     width: 100%;
+    white-space: nowrap;
+    gap: 2.5vw;
+     padding: 0 10px;
+     box-sizing: border-box;
     justify-content: center;
 }
 
 .buttons-filtros{
-    width: 105px;
+
+    width: 100px;
     height: 78px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    min-width: 40px;
+    max-width: 80px;
+    flex: 0 0 auto;
 
 }
 .buttons-filtros p{
@@ -54,11 +61,13 @@
 .buttons-filtros:hover svg path{
     fill: #6634F7;
     cursor: pointer;
+    background-image: url("");
 }
 
 .buttons-filtros:hover p{
     color: #6634F7;
     cursor: pointer;
+
 }
 
 .buttons-filtros:hover{
@@ -76,4 +85,26 @@
 
 .dinamic{
 
+}
+
+@media (max-width: 640px) {
+    .sec-filtros {
+        overflow-x: auto;
+        gap: 22px;
+        padding: 4px;
+        justify-content: space-between;
+        margin-right: 12px;
+    }
+
+    .buttons-filtros p {
+
+        font-size: 14px;
+    }
+
+    .icon-container svg {
+        width: 100%;
+    }
+    #bath{
+        margin-right: 16px;
+    }
 }

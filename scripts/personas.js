@@ -14,8 +14,6 @@ fetch('https://randomuser.me/api/?results=6')
   });
 
 
-
-
 function renderizarTarjetas(personas) {
     const contenedorResultados = document.querySelector(".row.row-cols-1.row-cols-md-3.g-5");
     contenedorResultados.innerHTML = "";
@@ -46,8 +44,7 @@ function renderizarTarjetas(personas) {
             <h5 className="card-title">${ganerInSpanish}<h5>
             <h5 className="card-title">${"ciudad: " + ciudad}<h5>
             <h5 className="card-title">${"edad: " + edad}<h5>
-            <h6 className="card-title">${email}</h6>
-            
+            <h6 className="card-title">${email}</h6> 
         </div>
       </div>
     `;

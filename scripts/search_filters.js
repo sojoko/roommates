@@ -5,17 +5,16 @@ let onlyMans = document.getElementById('hombres')
 let petFriendlys = document.getElementById('mascotas')
 let mixed = document.getElementById('mixed')
 let haveBathRoom = document.getElementById('bath')
+const filtroContainer = document.querySelector('.sec-filtros');
+const buttonsFiltros = document.querySelectorAll('.buttons-filtros');
+
+
 
 let filter = 0;
 fx.base = "COP"
 fx.rates = {
     "USD": 0.00025
 }
-
-console.log(fx.rates)
-//ciclo que le solicita al usuario la opcion por la cual desea filtrar su busqueda
-//se eliminaria cuando se agrege DOM
-
 
 // seccion de eventos
 casas.addEventListener('click', ()=>{
@@ -63,7 +62,7 @@ window.addEventListener('load',()=>{
 })
 
 
-// Funcion que renderiza las card de forma rinamica seguin el arreglo construido por la funcion de filtrado
+// Funcion que renderiza las card de forma dinamica segun el arreglo construido por la funcion de filtrado
 function renderizarTarjetas() {
 
 
@@ -90,6 +89,15 @@ function renderizarTarjetas() {
     contenedorResultados.appendChild(tarjeta);
   });
 }
+
+ buttonsFiltros.forEach(button => {
+        button.addEventListener('click', () => {
+            filtroContainer.scrollTo({
+                left: button.offsetLeft - filtroContainer.offsetWidth / 2 + button.offsetWidth / 2,
+                behavior: 'smooth'
+            });
+        });
+    });
 
 
 // Funcion que filtra segun la seleccion del usuario
